@@ -34,6 +34,7 @@ body{
 }
 
 .hero{
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
   padding: 60px 0;
@@ -50,4 +51,53 @@ body{
   width: 100%;
   display: block;
   max-width: 400px;
+  margin: 0 auto;
+}
+
+.hero_texts{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+}
+
+.hero_title{
+  font-size: 2.5rem;
+}
+
+.hero_cta{
+  background-color: slateblue;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 1em 3em;
+  border-radius: 2em;
+
+  align-self: center;
+}
+
+
+@media (min-width:768px){
+  .hero{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero_picture{
+    order: 1;
+    width: 50%;
+  }
+
+  .hero_img{
+    max-width: none;
+  }
+
+  .hero_texts{
+    width: 45%;
+    text-align: left;
+  }
+
+  .hero_cta{
+    align-self: flex-start;
+  }
 }
