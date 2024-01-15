@@ -89,12 +89,12 @@ body{
   box-shadow: 0 1px 4px rgb(0, 0, 0, .5);
 }
 
-.hero__contact{
+.hero_contact{
   display: flex;
   gap: 1.5em;
 }
 
-.hero__link{
+.hero_link{
   text-decoration: none;
   width: 40px;
   height: 40px;
@@ -105,7 +105,7 @@ body{
   justify-content: center;
 }
 
-.hero__icon{
+.hero_icon{
   width: 23px;
 }
 
@@ -117,7 +117,7 @@ body{
       background-size: 100% 100%;
   }
 
-  .hero__container{
+  .hero_container{
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -125,25 +125,25 @@ body{
       --padding-container: 20px 0 60px;
   }
 
-  .hero__picture{
+  .hero_picture{
       flex-basis: 45%;
   }
 
-  .hero__img{
+  .hero_img{
       max-width: unset;
   }
 
 
-  .hero__texts{
+  .hero_texts{
       flex-basis: 50%;
       text-align: left;
   }
   
-  .hero__title{
+  .hero_title{
       font-size: 2rem;
   }
 
-  .hero__contact{
+  .hero_contact{
       margin-left: auto;
   }
 }
