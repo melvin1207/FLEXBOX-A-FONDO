@@ -56,3 +56,62 @@ body{
   color: var(--desaturated-blue);
   font-family: var(--font2);
 }
+
+.hero{
+  position: relative;
+  --padding-container: 90px 0 170px; 
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-image: url('./images/bg-curve-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  bottom: 0;
+}
+
+.hero_img{
+  width: 100%;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.hero_info{
+  text-align: center;
+  color: var(--very-darkblue);
+}
+
+.hero_title{
+  font-size: 1.7rem;
+  font-family: var(--font2);
+  margin-top: 1.8em;
+}
+
+.hero_paragraph{
+  line-height: 1.5;
+  margin: 1.5em 0;
+}
+
+.hero_input{
+  height: 45px;
+  border-radius: 6px;
+  width: 100%;
+  font: inherit;
+  border: 1px solid var(--very-darkblue);
+  padding: 0 20px;
+  font-family: var(--font2);
+}
+
+.hero_input-cta{
+  background-color: var(--bright-blue);
+  color: aliceblue;
+  border: none;
+  font-weight: 700;
+  margin-top: 1.2em;
+}
