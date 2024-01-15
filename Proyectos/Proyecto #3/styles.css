@@ -10,6 +10,8 @@
 
   --font1: 'Open Sans', sans-serif;
   --font2: 'Raleway', sans-serif;
+
+  --padding-container: 90px 0;
 }
 
 *{
@@ -18,5 +20,39 @@
 }
 
 body{
+  font-family: var(--font1);
+}
 
+.container{
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: var(--padding-container);
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  gap: 1.1em;
+  --padding-container: 40px 0;
+}
+
+.nav_logo{
+  width: 110px;
+}
+
+.nav_img{
+  width: 100%;
+  display: block;
+}
+
+.nav_link:first-of-type{
+  margin-left: auto;
+}
+
+.nav_link{
+  text-decoration: none;
+  color: var(--desaturated-blue);
+  font-family: var(--font2);
 }
