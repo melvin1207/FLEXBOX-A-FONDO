@@ -1,0 +1,30 @@
+:root{
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --font2: 'Poppins', sans-serif;
+  --font1: 'Open Sans', sans-serif;
+
+  --padding-container: 60px 0;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font1);
+}
+
+.hero{
+  background-color: var(--violet);
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1200px;
+  padding: var(--padding-container);
+}
+
