@@ -112,3 +112,39 @@ body{
   line-height: 1.5;
   color: var(--grayish-blue);
 }
+
+.clipboard{
+  text-align: center;
+}
+
+.clipboard_img{
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.clipboard_offer{
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+  margin-top: 4em;
+}
+
+.clipboard_icon{
+  display: block;
+  width: 45px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+.clipboard_title{
+  font-size: 1.5rem;
+  color: var(--dark-grayish-blue);
+}
+
+.clipboard_paragraph{
+  color: var(--grayish-blue);
+  line-height: 1.5;
+  margin-top: 1em;
+}
