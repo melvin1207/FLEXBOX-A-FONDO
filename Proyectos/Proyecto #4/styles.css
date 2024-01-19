@@ -72,7 +72,7 @@ body{
   background-color: var(--light-blue);
 }
 
-.tracj_texts{
+.track_texts{
   text-align: center;
 }
 
@@ -115,6 +115,10 @@ body{
 
 .clipboard{
   text-align: center;
+}
+
+.clipboard_picture{
+  margin: 3em 0 6em;
 }
 
 .clipboard_img{
@@ -200,4 +204,129 @@ body{
 
 .footer_icon{
   display: block;
+}
+
+@media(min-width:768px){
+  .hero{
+    --padding-conteiner: 120px 0 90px;
+    background-image: url('./images/bg-header-desktop.png');
+  }
+  
+  .hero_title{
+    color: var(--dark-grayish-blue);
+    margin-bottom: 1rem;
+  }
+  
+  .buttons{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .buttons_cta{
+    padding: 1em 3em;
+  }
+
+  .track{
+    --padding-container: 80px 0 0;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .track_texts{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+  }
+  
+  .title{
+    font-size: 2.5rem;
+  }
+
+  .track_picture{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    height: 700px;
+  }
+  
+  .track_img{
+    width: 125%;
+    max-width: 650px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+  
+  .track_articles{
+    width: 42%;
+    gap: 3em;
+    margin: 0 auto;
+    text-align: left;
+    align-self: center;
+  }
+
+  .clipboard{
+    --padding-container: 20px 0 80px;
+  }
+  
+  .clipboard_img{
+    max-width: 700px;
+  }
+  
+  .clipboard_offer{
+    flex-direction: row;
+    gap: 2em;
+    margin-top: 4em;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .clipboard_item{
+    flex: 1;
+  }
+  
+  .brands{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .brands_iter{
+    min-width: 100px;
+    max-width: 130px;
+    flex: 1;
+  }
+
+  .footer_container{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+  }
+
+  .footer_img{
+    width: 70px;
+  }
+
+  .footer_links{
+    margin: 0;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer_link{
+    width: 28%;
+  }
+
+  .footer_social{
+    margin-left: auto;
+  }
 }
