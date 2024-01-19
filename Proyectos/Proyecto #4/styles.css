@@ -148,3 +148,14 @@ body{
   line-height: 1.5;
   margin-top: 1em;
 }
+
+.brands{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.5em;
+}
+
+.action{
+  text-align: center;
+}
