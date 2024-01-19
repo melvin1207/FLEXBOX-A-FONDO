@@ -4,6 +4,8 @@
 
   --dark-grayish-blue: hsl(210, 10%, 33%);
   --grayish-blue: hsl(201, 11%, 66%);
+
+  --padding-container: 80px 0;
 }
 
 *{
@@ -13,4 +15,59 @@
 
 body{
   font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var(--padding-container);
+}
+
+.hero{
+  --padding-container: 120px 0 80px;
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.hero_img{
+  display: block;
+  margin-bottom: 4.5em;
+  margin: 0 auto;
+}
+
+.hero_title{
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.hero_paragraph{
+  color: var(--grayish-blue);
+  line-height: 1.5;
+}
+
+.buttons{
+  margin-top: 2.3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-align: center;
+}
+
+.buttons_cta{
+  background-color: var(--strong-cyan);
+  color: aliceblue;
+  text-decoration: none;
+  border-radius: 2em;
+  font-weight: 600;
+  padding: 1em 0;
+  box-shadow: 0 0 10px -5px var(--strong-cyan);
+}
+
+.buttons_cta-blue{
+  box-shadow: 0 0 10px -5px var(--strong-cyan);
+  background-color: var(--light-blue);
 }
