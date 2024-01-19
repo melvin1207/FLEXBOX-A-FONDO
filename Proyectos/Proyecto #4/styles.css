@@ -71,3 +71,44 @@ body{
   box-shadow: 0 0 10px -5px var(--strong-cyan);
   background-color: var(--light-blue);
 }
+
+.tracj_texts{
+  text-align: center;
+}
+
+.title{
+  color: var(--dark-grayish-blue);
+  font-size: 2rem;
+}
+
+.paragraph{
+  line-height: 1.5;
+  color: var(--grayish-blue);
+  margin-top: 1.5em;
+}
+.track_img{
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3.5em;
+}
+
+.track_articles{
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+  margin-top: 2.5em;
+  text-align: center;
+}
+
+.track_offer{
+  color: var(--dark-grayish-blue);
+  font-size: 1.5rem;
+}
+
+.track_copy{
+  margin-top: .7em;
+  line-height: 1.5;
+  color: var(--grayish-blue);
+}
