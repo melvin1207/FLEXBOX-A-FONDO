@@ -96,3 +96,50 @@ body{
   padding: .8em 2.2em;
 }
 
+/*different*/
+.different{
+  text-align: center;
+}
+
+.title-different{
+  position: relative;
+  padding-top: 30px;
+}
+
+.title-different::before{
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 0;
+  left: 0;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--dark-grayish-violet);
+  width: 120px;
+  height: 1px;
+}
+
+.different_items{
+  margin-top: 3.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.different_icon{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.different_title{
+  font-family: var(--font1);
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.different_paragraph{
+  margin-top: 1em;
+  line-height: 1.5;
+  color: var(--dark-grayish-violet);
+}
