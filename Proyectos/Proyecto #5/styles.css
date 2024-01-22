@@ -9,6 +9,8 @@
   --font1: 'DM Serif Display', serif;
 
   --padding-container: 80px 0;
+
+  scroll-padding-top: 80px;
 }
 
 *{
@@ -19,3 +21,78 @@
 body{
   font-family: 'Karla', sans-serif;
 }
+
+.container{
+  max-width: 1200px;
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: var(--padding-container);
+}
+
+.hero{
+  background-color: var(--dark-violet);
+  color: aliceblue;
+  --padding-container: 0;
+}
+
+.nav{
+  background-color: aliceblue;
+}
+
+.nav_container{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_links{
+  display: none;
+}
+
+.nav_icon, .nav_logo{
+  display: block;
+}
+
+.hero_main{
+  width: 100%;
+}
+
+.hero_main::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 370px;
+  background-image: url('./images/image-intro-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero_texts{
+  width: 90%;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.title{
+  font-size: 2.5rem;
+  font-family: var(--font1);
+  letter-spacing: 3px;
+}
+
+.hero_paragraph{
+  line-height: 1.5;
+  margin-top: 1em;
+}
+
+.cta{
+  display: inline-block;
+  margin-top: 1.5em;
+  border: 1px solid aliceblue;
+  text-decoration: none;
+  color: aliceblue;
+  padding: .8em 2.2em;
+}
+
