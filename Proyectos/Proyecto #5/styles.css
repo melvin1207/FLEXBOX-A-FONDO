@@ -67,6 +67,7 @@ body{
   background-image: url('./images/image-intro-mobile.jpg');
   background-size: cover;
   background-position: center;
+  z-index: -2;
 }
 
 .hero_texts{
@@ -141,5 +142,104 @@ body{
 .different_paragraph{
   margin-top: 1em;
   line-height: 1.5;
+  color: var(--dark-grayish-violet);
+}
+
+/*find*/
+.find{
+  padding: 80px 0;
+  --padding-container: 60px 30px;
+}
+
+.find_container{
+  position: relative;
+  z-index: 1;
+  color: aliceblue;
+  background-color: var(--dark-violet);
+  text-align: center;
+}
+
+.find_container::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url('./images/bg-pattern-how-we-work-mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/*footer*/
+.footer{
+  background-color: var(--very-light-gray);
+}
+
+.footer_container{
+  position: relative;
+  z-index: 1;
+
+}
+
+.footer_container::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 11%;
+  background-image: url('./images/bg-pattern-footer-mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.footer_brand{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+
+  padding-bottom: 2.5em;
+  margin-bottom: 2.5em;
+
+  border-bottom: 1px solid var(--dark-grayish-violet);
+}
+
+.footer_logo{
+  display: block;
+}
+
+.footer_media{
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_navigation{
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.footer_nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.footer_link{
+  text-decoration: none;
+  color: var(--dark-violet);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer_link-first{
+  margin-bottom: 1em;
   color: var(--dark-grayish-violet);
 }
