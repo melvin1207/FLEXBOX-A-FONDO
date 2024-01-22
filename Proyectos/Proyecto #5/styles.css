@@ -67,7 +67,6 @@ body{
   background-image: url('./images/image-intro-mobile.jpg');
   background-size: cover;
   background-position: center;
-  z-index: -2;
 }
 
 .hero_texts{
@@ -242,4 +241,139 @@ body{
 .footer_link-first{
   margin-bottom: 1em;
   color: var(--dark-grayish-violet);
+}
+
+@media(min-width:768px){
+  .nav_links{
+    display: flex;
+    gap: 2em;
+  }
+
+  .nav_link{
+    text-decoration: none;
+    color: var(--dark-grayish-violet);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .8em 0;
+  }
+
+  .nav_link-cta{
+    color: var(--dark-violet);
+    border: 1px solid;
+    padding: .8em 2em;
+  }
+  
+  .nav_hamburger{
+    display: none;
+  }
+
+  .hero{
+    background-image: linear-gradient(to bottom, var(--dark-violet) 75%, aliceblue 75%);
+  }
+  
+  .hero_main{
+    --padding-container: 100px 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hero_main::before{
+    width: 48%;
+    height: 530px;
+    background-image: url('./images/image-intro-desktop.jpg');
+    order: 1;
+  }
+  
+  .hero_texts{
+    width: 49%;
+    margin: 0;
+    padding: 20px 0 0;
+    text-align: left;
+    position: relative;
+  }
+
+  .hero_texts::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+  }
+  
+  .title{
+    font-size: 2.7rem;
+  }
+
+  .different{
+    text-align: left;
+  }
+  
+  .title-different::before{
+    margin: 0;
+  }
+  
+  .different_items{
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .different_item{
+    flex: 1;
+  }
+  
+  .different_icon{
+    margin-left: 0;
+  }
+
+  .find{
+    --padding-container: 60px;
+  }
+  
+  .find_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .find_container::before{
+    background-image: url('./images/bg-pattern-how-we-work-desktop.svg');
+  }
+
+  .title-find{
+    width: 60%;
+  }
+  
+  .footer_container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 15%;
+    background-image: url('./images/bg-pattern-footer-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  .footer_brand{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+  
+  .footer_navigation{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3em;
+  }
+  
+  .footer_nav{
+    width: 20%;
+    align-items: flex-start;
+  }
 }
